@@ -1,5 +1,5 @@
 const request = require("request")
-const app_domain = 'https://light-in-house.herokuapp.com/renew'
+const app_domain = 'https://light-in-house.herokuapp.com/renew' //'http://localhost:3000/renew'
 
 setInterval( () => {
     request.post(
@@ -12,4 +12,4 @@ setInterval( () => {
             }
         }
     )
-}, 1000) // every second (1000)
+}, 4000) // every 4 seconds (4000)
